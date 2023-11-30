@@ -23,6 +23,7 @@ export default function HomeLayout() {
         <Tabs.Screen
           name="library"
           options={{
+            headerShown: false,
             title: "Library",
             tabBarIcon: () => <Icon source="book" size={20} />
           }}

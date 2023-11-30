@@ -1,5 +1,5 @@
 import { Tabs } from "expo-router";
-import { Icon } from "react-native-elements/dist/icons/Icon";
+import { Icon } from "react-native-paper";
 import { DefaultTheme, PaperProvider, Portal } from "react-native-paper";
 
 export default function HomeLayout() {
@@ -10,28 +10,28 @@ export default function HomeLayout() {
           name="index"
           options={{
             title: "Home",
-            tabBarIcon: () => <Icon name="home" />
+            tabBarIcon: () => <Icon source="home" size={20} />
           }}
         />
         <Tabs.Screen
           name="program"
           options={{
             title: "Program",
-            tabBarIcon: () => <Icon name="list" />
+            tabBarIcon: () => <Icon source="view-list" size={20} />
           }}
         />
         <Tabs.Screen
           name="library"
           options={{
             title: "Library",
-            tabBarIcon: () => <Icon name="book" />
+            tabBarIcon: () => <Icon source="book" size={20} />
           }}
         />
         <Tabs.Screen
           name="appointment"
           options={{
             title: "Appointment",
-            tabBarIcon: () => <Icon name="calendar" />
+            tabBarIcon: () => <Icon source="calendar-account" size={20} />
           }}
         />
       </Tabs>
